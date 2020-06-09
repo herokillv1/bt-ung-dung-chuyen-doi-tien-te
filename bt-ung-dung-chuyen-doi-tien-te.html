@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt-ung-dung-chuyen-doi-tien-te</title>
+</head>
+<body>
+<table cellspacing="0">
+    <form method="get">
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label><input id="amount" type="text" name="a"></label>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+        <table>
+            <tr>
+                <th>From Currency</th>
+            </tr>
+            <tr>
+                <td>
+                   <label> <select id="FCurrency">
+                        <option value="VN">VietNam</option>
+                        <option value="USD">USD</option>
+                    </select>
+                   </label>
+                </td>
+            </tr>
+        </table>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <th>To Currency</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label> <select id="TCurrency">
+                            <option value="USD">USD</option>
+                            <option value="VN">VietNam</option>
+                        </select>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table cellspacing="0">
+                <tr>
+                    <th style="height: 20px"></th>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" style="background: blueviolet" onclick="validateForm()">
+                            <span style="color: white">Convert</span>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    </form>
+    <tr>
+        <td style="color: blue">Result : </td>
+        <td style="color: blue"><p id="output"></p></td>
+    </tr>
+</table>
+<script src="bt-ung-dung-chuyen-doi-tien-te.js"></script>
+</body>
+</html>
